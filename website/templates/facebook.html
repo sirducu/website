@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block title %}TikTok{% endblock %} {% block content%}
+<html>
+ <body>
+ <main class="px-3">
+   <h1>Facebook Video/Reel Downloader</h1>
+   <p class="lead">Download videos from Facebook</p>
+   <p class="lead">
+       <form action="/youtube" method="post">
+           <input type="text" class="form-control" name="flink" placeholder="Introdu link-ul aici"><br>
+           <button type="submit" class="btn btn-success mt-3">Download</button>
+       </form>
+   </p>
+ </main>
+ 
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "base.html" %} {% block title %}Index{% endblock %} {% block content%}  
+<html>
+ <body>
+ <main class="px-3">
+   <h1>URL Shortener API</h1>
+   <h6>Example: python!<br>
+    import requests<br>
+    url = "http://radu.ovh/api/short"<br>
+    querystring = {"URL" : "https://www.youtube.com/watch?v=AG56t8t9iW8"}<br>
+    response = requests.get(url, params=querystring)<br>
+    rsp = response.text<br>
+    print(rsp["ShortURL"])<br>
+   </h6>
+   <h1>Youtube video download API</h1>
+   <h6>
+    Example: python!<br>
+    import requests<br>
+    url = "http://radu.ovh/ytdl"<br>
+    querystring = {"URL" : "https://www.youtube.com/watch?v=AG56t8t9iW8"}<br>
+    response = requests.get(url, params=querystring)<br>
+    rsp = response.text<br>
+    print(rsp)<br>
+    url = rsp["DL_LINK"]  #url taken from the API<br>
+    name = "video" #name of the video, you can also choose rsp['Name']<br>
+    name=name+".mp4" #extension ..<br>
+    and the rest is the most important part :)<br> 
+    r=requests.get(url)<br>
+    with open(f"D:/path/{name}",'wb') as f:<br>
+    ----for chunk in r.iter_content(chunk_size=255):<br>
+    --------if chunk: # filter out keep-alive new chunks<br>
+    ------------f.write(chunk)<br>
+    remember to user space for indentation instead of "----"
+</h6>
+ </main>
+</body>
+</html>
+{% endblock %}

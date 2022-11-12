@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% block title %}Index{% endblock %} {% block content%}  
+<html>
+ <body>
+<br>
+<br>
+<br>
+   <div class="row">
+    <div class="col-lg-4" style="margin-top: 30px;">
+      <a href="/facebook"><img src="{{url_for('static', filename='facebook.gif')}}" class="img-thumbnail" width="140" height="70"><rect width="100%" height="100%" fill="#777"/></a>    
+   </div><!-- /.col-lg-4 -->
+   <div class="col-lg-4" style="margin-top: 30px;">
+    <a href="/youtube"><img src="{{url_for('static', filename='youtube.gif')}}" class="img-thumbnail" width="140" height="70"><rect width="100%" height="100%" fill="#777"/></a>    
+ </div><!-- /.col-lg-4 -->
+     <div class="col-lg-4" style="margin-top: 30px;">
+        <a href="/tiktok"><img src="{{url_for('static', filename='tiktok.gif')}}" class="img-thumbnail" width="140" height="70"><rect width="100%" height="100%" fill="#777"/></a>    
+     </div><!-- /.col-lg-4 -->
+     <div class="col-lg-4" style="margin-top: 30px;">
+      <a href="https://twitter.com/SirDuCutj"><img src="{{url_for('static', filename='twitter.gif')}}" class="img-thumbnail" width="140" height="70"><rect width="100%" height="100%" fill="#777"/></a>    
+   </div><!-- /.col-lg-4 -->
+   <div class="col-lg-4" style="margin-top: 30px;">
+    <a href="/short"><img src="{{url_for('static', filename='url.gif')}}" class="img-thumbnail" width="140" height="70"><rect width="100%" height="100%" fill="#777"/></a>    
+ </div><!-- /.col-lg-4 -->
+ <div class="col-lg-4" style="margin-top: 30px;">
+   <a href="/api"><img src="{{url_for('static', filename='api.gif')}}" class="img-thumbnail" width="140" height="70"><rect width="100%" height="100%" fill="#777"/></a>    
+</div><!-- /.col-lg-4 -->
+
+   </div><!-- /.row -->
+<br>
+<br>
+<br>
+</body>
+</html>
+{% endblock %}

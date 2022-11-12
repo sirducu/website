@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block title %}Index{% endblock %} {% block content%}  
+<html>
+ <body>
+ <main class="px-3">
+   <h1>URL Shortener</h1>
+   <p class="lead">URL Shortener</p>
+   <p class="lead">
+       <form action="/short" method="post">
+           <input type="text" class="form-control" name="shrt" placeholder="Introdu link-ul aici"><br>
+           <button type="submit" class="btn btn-success mt-3">Submit</button>
+       </form>
+       {% if short_url %}
+       <hr>
+       <span>{{ short_url }}</span>
+       {% endif %}
+   </p>
+ </main>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% block title %}TikTok{% endblock %} {% block content%}
+<html>
+ <body>
+ <main class="px-3">
+   <h1>Youtube Video Downloader</h1>
+   <p class="lead">Download videos from YouTube</p>
+   <p class="lead">
+       <form id="package_form" action="" method="post">
+           <input type="text" class="form-control" name="yturl" placeholder="Introdu link-ul aici"><br>
+           <button type="submit" name="action" value="mp4" class="btn btn-success mt-3">Download mp4</button>
+           <button type="submit" name="action" value="mp3" class="btn btn-success mt-3">Download mp3</button>
+       </form>
+   </p>
+ </main>
+ 
+</body>
+</html>
+{% endblock %}

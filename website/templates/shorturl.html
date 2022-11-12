@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block title %}Index{% endblock %} {% block content%}  
+<html>
+ <body>
+ <main class="px-3">
+   <h1>URL Shortener</h1>
+   <p class="lead">URL Shortener</p>
+   <p class="lead">
+        <h1><a href="https://radu.ovh/{{short_url}}">https://radu.ovh/{{short_url}}</a></h1>
+        <a href="https://radu.ovh/short">Back Home</a>
+   </p>
+ </main>
+</body>
+</html>
+{% endblock %}
